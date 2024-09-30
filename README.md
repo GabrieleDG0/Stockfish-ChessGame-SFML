@@ -1,4 +1,4 @@
-# Chess Game using Stockfish and C++ SFML 
+# Chess Game Engine using Stockfish and C++ SFML 
 
 ## Introduction 
 This software is a modern chess application that combines the thrill of chess with the power of artificial intelligence. Utilising the Simple and Fast Multimedia Library (SFML) for graphics and the renowned Stockfish chess engine for intelligent gameplay, this application allows users to engage in challenging chess games against a computer opponent or another human player.
