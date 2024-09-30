@@ -55,4 +55,4 @@ While this system serves as a robust chess application, it has several potential
 - Augmented reality integration: Explore the potential for augmented reality features that allow players to visualize and interact with the chessboard in a virtual environment.
 
 ## Contributions
-For more information and to try out ChessGame-Engine-SFML, you can visit the project repository on GitHub. If you find bugs or problems or have suggestions for improvement, feel free to open a post in the repository. Your feedback is valuable for the further development of this project. 
+For more information and to try out, you can visit the project code repository on GitHub. If you find bugs or problems or have suggestions for improvement, feel free to open a post in the repository. Your feedback is valuable for the further development of this project. 
