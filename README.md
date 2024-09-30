@@ -23,11 +23,17 @@ The program uses the SFML library for rendering and user interactions and integr
 - Color and texture definitions: The application defines the colors for the chessboard and loads textures for the pieces from image files to improve visual appeal.
 - Chessboard layout: The chessboard is created as an 8x8 grid, with each square designated for specific chess pieces at the start of the game.
 
+![ChessBoard](https://github.com/user-attachments/assets/b5ba918a-e2c0-4784-85f0-c338ff040419)
+
 ### Drawing the board and pieces
 - Rendering: Functions for drawing the chessboard and pieces are provided. The application renders the living pieces as sprites and updates their positions based on user interactions.
 Game logic
 - Move verification: The application checks whether each move is valid according to the rules of chess. It handles special moves such as castling and en passant moves.
 - AI integration: The Stockfish engine analyzes the current game state and generates the best possible moves for the AI opponent. The application communicates with the engine via the Universal Chess Interface (UCI) protocol.
+
+![ChessPieces](https://github.com/user-attachments/assets/edad4594-ed83-4a31-a5bc-e275019c84ec)
+
+
 
 ## Interaction with the user
 To play the game, please follow these instructions:
