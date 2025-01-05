@@ -17,7 +17,7 @@ DWORD writ, excode, read, available;
 // Function to set up a connection to an external process (e.g., a chess engine)
 void ConnectToEngine(TCHAR path[])
 {   
-	// Initialize handles to NULL
+    // Initialize handles to NULL
     pipin_w = pipin_r = pipout_w = pipout_r = NULL;
     
 	// Set security attributes for the pipes
