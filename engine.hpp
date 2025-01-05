@@ -15,30 +15,33 @@ BYTE buffer[2048];
 DWORD writ, excode, read, available;
 
 // Function to set up a connection to an external process (e.g., a chess engine)
-void ConnectToEngine(char* path)
-{
-    // Initialize handles to NULL
+void ConnectToEngine(TCHAR path[])
+{   
+	// Initialize handles to NULL
     pipin_w = pipin_r = pipout_w = pipout_r = NULL;
-
-    // Set security attributes for the pipes
+    
+	// Set security attributes for the pipes
     sats.nLength = sizeof(sats);
     sats.bInheritHandle = TRUE;
     sats.lpSecurityDescriptor = NULL;
-
-    // Create pipes for input and output
+    
+	// Create pipes for input and output
     CreatePipe(&pipout_r, &pipout_w, &sats, 0);
     CreatePipe(&pipin_r, &pipin_w, &sats, 0);
-
-    // Set up the STARTUPINFO structure to redirect standard input, output, and error
+    
+	// Set up the STARTUPINFO structure to redirect standard input, output, and error
     sti.dwFlags = STARTF_USESHOWWINDOW | STARTF_USESTDHANDLES;
     sti.wShowWindow = SW_HIDE; // Hide the window
     sti.hStdInput = pipin_r;   // Redirect standard input to pipin_r
     sti.hStdOutput = pipout_w; // Redirect standard output to pipout_w
     sti.hStdError = pipout_w;  // Redirect standard error to pipout_w
-
-    // Create the process, with redirection of handles set up in STARTUPINFO
-    CreateProcess(NULL, path, NULL, NULL, TRUE, 0, NULL, NULL, &sti, &pi);
-}
+    
+	// Create the process, with redirection of handles set up in STARTUPINFO
+    if (!CreateProcess(NULL, path, NULL, NULL, TRUE, 0, NULL, NULL, &sti, &pi))
+    {
+        std::cerr << "Error creating process: " << GetLastError() << std::endl;
+    }
+} 
 
 // Function to send a position command to the engine and retrieve the next move
 std::string getNextMove(std::string position)
