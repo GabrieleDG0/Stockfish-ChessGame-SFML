@@ -65,16 +65,10 @@ The main loop of the application manages the frame rate, checks for user input, 
 ## Applications and Extensions
 While this system serves as a robust chess application, it has several potential applications and possibilities for future development:
 
-### Applications
-- **Educational tool**: This application can be used as a teaching tool to help new players learn the rules and strategies of chess in an interactive way.
-- **AI training**: Advanced players can use Stockfish as a sparring partner to practice and improve their skills against one of the strongest chess engines.
-
 ### Future Enhancements
 - Some features, such as a pawn promotion system, still need to be finalized to complete the correct functionality of the game engine.
 - **Online multiplayer mode**: Implementation of an online functionality that allows users to play against other players over the Internet.
 - **Improved AI functions**: Introduce different difficulty levels for the AI opponent to appeal to players with different skill levels.
-- **Gesture control**: Integrate gesture recognition for moving pieces to improve the interactive experience.
-- **Augmented reality integration**: Explore the potential for augmented reality features that allow players to visualize and interact with the chessboard in a virtual environment.
 
 ## Contributions
 For more information and to try out, you can visit the project code repository on GitHub. If you find bugs or problems or have suggestions for improvement, feel free to open a post in the repository. Your feedback is valuable for the further development of this project.
