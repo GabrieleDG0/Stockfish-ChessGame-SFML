@@ -4,10 +4,7 @@
 This software is a modern chess application that combines the thrill of chess with the power of artificial intelligence. Utilising the Simple and Fast Multimedia Library (SFML) for graphics and the renowned Stockfish chess engine for intelligent gameplay, this application allows users to engage in challenging chess games against a computer opponent or another human player. Users can create an initial configuration of chess pieces and watch the game unfold by making strategic decisions based on their understanding of chess.
 
 ## Download and Requirements
-To run the application, please follow these steps:
-1) Download the executable: Visit the Releases section on GitHub to find and download the latest version of the Stockfish-GameEngine-SFML.exe file.
-2) Install SFML: The application requires the SFML library to function correctly. You can download the latest version of SFML from the official website.
-Make sure to follow the instructions for installing and configuring SFML, as the application will not work without this library.
+To run the application, visit the Releases section on GitHub to find and download the latest version of the package containing the Game.exe, the engine Stockfish.exe and the textures.
 
 ### Chess Rules
 Chess is played on an 8x8 grid known as a chessboard. Each player starts with 16 pieces: a king, a queen, two rooks, two knights, two bishops, and six pawns. The aim of the game is to checkmate the opponent's king. This happens when the king is attacked and can no longer escape. The game follows the following basic rules:
