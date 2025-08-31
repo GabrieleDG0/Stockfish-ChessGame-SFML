@@ -4,19 +4,14 @@
 Modern chess application utilising the Simple and Fast Multimedia Library (SFML) for graphics and the Stockfish chess engine for intelligent gameplay, this application allows users to engage in challenging chess games against a computer opponent or another human player. Users can create an initial configuration of chess pieces and watch the game unfold by making strategic decisions based on their understanding of chess.
 
 ## Download
-To run the application, visit the Releases section on GitHub to find and download the latest version of the package containing the Game.exe, the engine Stockfish.exe and the textures.
+To run the application, visit the Releases section on GitHub to find and download the latest version of the package containing the Game.exe compiled statically, the engine Stockfish.exe and the textures.
 
 ## Overview
 The program uses the SFML library for rendering and user interactions and integrates the Stockfish chess engine for AI capabilities.
 
-### Setup and Initialization
-- **Initial setup**: The SFML library is initialized to handle graphics and events to ensure smooth rendering of the chessboard and pieces.
-- **Color and texture definitions**: The application defines the colors for the chessboard and loads textures for the pieces from image files to improve visual appeal.
-- **Chessboard layout**: The chessboard is created as an 8x8 grid, with each square designated for specific chess pieces at the start of the game.
+The SFML library is initialized to handle graphics and events to ensure smooth rendering of the chessboard and pieces. The application defines the colors for the chessboard and loads textures for the pieces from image files to improve visual appeal. The chessboard is created as an 8x8 grid, with each square designated for specific chess pieces at the start of the game. Functions for drawing the chessboard and pieces are provided. The application renders the living pieces as sprites and updates their positions based on user interactions.
 
 ![ChessBoard](https://github.com/user-attachments/assets/b5ba918a-e2c0-4784-85f0-c338ff040419)
-
-- **Rendering**: Functions for drawing the chessboard and pieces are provided. The application renders the living pieces as sprites and updates their positions based on user interactions.
 
 ![ChessPieces](https://github.com/user-attachments/assets/edad4594-ed83-4a31-a5bc-e275019c84ec)
 
