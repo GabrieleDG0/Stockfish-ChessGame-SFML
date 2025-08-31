@@ -2,6 +2,9 @@
 
 ## Introduction 
 Modern chess application utilising the Simple and Fast Multimedia Library (SFML) for graphics and the Stockfish chess engine for intelligent gameplay, this application allows users to engage in challenging chess games against a computer opponent or another human player. Users can create an initial configuration of chess pieces and watch the game unfold by making strategic decisions based on their understanding of chess.
+<p align="center">
+<img width="580" height="612" alt="image" src="https://github.com/user-attachments/assets/6168f7b3-a9a1-4aae-9280-58eb2d3eb0e0" />
+</p>
 
 ## Download
 To run the application, visit the Releases section on GitHub to find and download the latest version of the package containing the Game.exe compiled statically, the engine Stockfish.exe and the textures.
